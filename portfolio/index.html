@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Margarida Santos — Portfolio</title>
+    <meta name="description" content="Portfólio de Margarida Santos, designer de multimédia: interação, sistemas generativos e comunicação visual.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Margarida Santos</a>
+
+        <nav>
+            <a href="#projects" data-i18n="navProjects">Projetos</a>
+            <a href="#about" data-i18n="navAbout">Sobre</a>
+            <a href="#contact" data-i18n="navContact">Contacto</a>
+
+            <button id="language-toggle" class="language-toggle" aria-label="Change language">
+                <strong>PT</strong> / EN
+            </button>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-small">
+                <span data-i18n="heroPortfolio">PORTFÓLIO</span>
+                <span data-i18n="heroTags">DESIGN · MULTIMÉDIA · INTERAÇÃO</span>
+            </div>
+
+            <div class="hero-title">
+                <h1>
+                    MARGARIDA
+                    <span>SANTOS</span>
+                </h1>
+            </div>
+
+            <div class="hero-bottom">
+                <p data-i18n="heroDescription">
+                    Designer de Multimédia interessada em
+                    interação, sistemas generativos e
+                    comunicação visual.
+                </p>
+
+                <a href="#projects" class="scroll">
+                    <span data-i18n="heroScroll">Ver projetos</span>
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- MARQUEE (text comes from script.js so it translates) -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span data-i18n="mq1">Design de Interação</span><span>✦</span>
+                <span data-i18n="mq2">Design Generativo</span><span>✦</span>
+                <span data-i18n="mq3">Identidade Visual</span><span>✦</span>
+                <span data-i18n="mq4">Desenvolvimento Web</span><span>✦</span>
+                <span data-i18n="mq5">Visualização de Informação</span><span>✦</span>
+                <span data-i18n="mq1">Design de Interação</span><span>✦</span>
+                <span data-i18n="mq2">Design Generativo</span><span>✦</span>
+                <span data-i18n="mq3">Identidade Visual</span><span>✦</span>
+                <span data-i18n="mq4">Desenvolvimento Web</span><span>✦</span>
+                <span data-i18n="mq5">Visualização de Informação</span><span>✦</span>
+            </div>
+        </div>
+
+
+        <!-- INTRO -->
+        <section class="intro">
+
+            <p class="section-number">01 /</p>
+
+            <h2 class="reveal" data-i18n="introTitle">
+                Ideias que se transformam
+                em experiências visuais.
+            </h2>
+
+            <p class="intro-text reveal" data-i18n="introText">
+                Exploro a relação entre design, tecnologia
+                e interação através de projetos digitais,
+                identidades visuais e sistemas generativos.
+            </p>
+
+        </section>
+
+
+        <!-- PROJECTS (rendered by script.js from projects.js) -->
+        <section id="projects" class="projects">
+
+            <div class="section-header">
+                <p class="section-number">02 /</p>
+                <h2 data-i18n="projectsTitle">Projetos</h2>
+            </div>
+
+            <div id="project-list"></div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+
+            <div>
+                <p class="section-number">03 /</p>
+                <h2 data-i18n="aboutTitle">Sobre mim</h2>
+            </div>
+
+            <div class="about-content">
+
+                <p class="about-big reveal" data-i18n="aboutBig"></p>
+
+                <p class="reveal" data-i18n="aboutText1"></p>
+
+                <p class="reveal" data-i18n="aboutText2"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+
+            <p class="section-number">04 /</p>
+
+            <h2 data-i18n="contactTitle">Contactos</h2>
+
+            <a href="mailto:magui23santos@gmail.com" class="email">
+                magui23santos@gmail.com
+            </a>
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/margarida-santos023" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.behance.net/margaridasantos16" target="_blank" rel="noopener">Behance</a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- HOVER PREVIEW (follows the cursor over the project list) -->
+    <div id="project-preview"  aria-hidden="true">
+        <img alt="">
+    </div>
+
+
+    <footer>
+        <span>© 2026 Margarida Santos</span>
+        <span data-i18n="footer">Feito com curiosidade.</span>
+    </footer>
+
+
+    <script src="projects.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

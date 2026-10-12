@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto — Margarida Santos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar project-navbar">
+        <a href="index.html" class="logo">MS.</a>
+        <nav>
+            <a href="index.html#projects" data-i18n="backProjects">Projetos</a>
+            <button id="language-toggle" class="language-toggle" aria-label="Change language">
+                <strong>PT</strong> / EN
+            </button>
+        </nav>
+    </header>
+
+    <div class="project-layout">
+
+        <!-- LEFT: menu with all projects (stays in place) -->
+        <aside class="project-menu" aria-label="Projects">
+            <a href="index.html#projects" class="back-link" data-i18n="backLink">Voltar aos projetos</a>
+            <div id="project-menu-list" class="project-menu-list"></div>
+        </aside>
+
+        <!-- RIGHT: the open project -->
+        <main class="project-page" id="project-content">
+            <p id="project-category" class="project-category"></p>
+            <h1 id="project-title" class="project-page-title"></h1>
+            <p id="project-description" class="project-description"></p>
+
+            <div id="project-details" class="project-details">
+                <div id="detail-role">
+                    <span data-i18n="detailRole">Papel</span>
+                    <p id="project-role"></p>
+                </div>
+                <div id="detail-tools">
+                    <span data-i18n="detailTools">Ferramentas</span>
+                    <p id="project-tools"></p>
+                </div>
+                <div id="detail-year">
+                    <span data-i18n="detailYear">Ano</span>
+                    <p id="project-year"></p>
+                </div>
+            </div>
+
+            <div id="project-gallery" class="project-gallery"></div>
+
+            
+        </main>
+
+    </div>
+
+    <footer>
+        <span>© 2026 Margarida Santos</span>
+        <span data-i18n="footer">Feito com curiosidade.</span>
+    </footer>
+
+    <script src="projects.js"></script>
+    <script src="project.js"></script>
+</body>
+</html>
